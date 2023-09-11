@@ -10,8 +10,7 @@
 
 **Architecture**
 
-![alt text]([https://github.com/mahdimostafa/jlr_interview/blob/main/architecture.png])
-
+![alt text](https://github.com/mahdimostafa/jlr_interview/blob/main/architecture.png?raw=true)
 
 **Airflow**
 
