@@ -1,0 +1,72 @@
+[2023-09-10T09:36:36.720+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ingest_xl_to_postgres.sense_file scheduled__2023-09-09T00:00:00+00:00 [queued]>
+[2023-09-10T09:36:36.729+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ingest_xl_to_postgres.sense_file scheduled__2023-09-09T00:00:00+00:00 [queued]>
+[2023-09-10T09:36:36.730+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-09-10T09:36:36.741+0000] {taskinstance.py:1382} INFO - Executing <Task(FileSensor): sense_file> on 2023-09-09 00:00:00+00:00
+[2023-09-10T09:36:36.746+0000] {standard_task_runner.py:57} INFO - Started process 379 to run task
+[2023-09-10T09:36:36.749+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ingest_xl_to_postgres', 'sense_file', 'scheduled__2023-09-09T00:00:00+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/ingest_xl_data_dag.py', '--cfg-path', '/tmp/tmpv2epyl81']
+[2023-09-10T09:36:36.753+0000] {standard_task_runner.py:85} INFO - Job 35: Subtask sense_file
+[2023-09-10T09:36:36.802+0000] {task_command.py:415} INFO - Running <TaskInstance: ingest_xl_to_postgres.sense_file scheduled__2023-09-09T00:00:00+00:00 [running]> on host 207c7509dcbb
+[2023-09-10T09:36:37.039+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='ingest_xl_to_postgres' AIRFLOW_CTX_TASK_ID='sense_file' AIRFLOW_CTX_EXECUTION_DATE='2023-09-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-09T00:00:00+00:00'
+[2023-09-10T09:36:37.054+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:36:37.056+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:36:47.077+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:36:47.078+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:36:57.068+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:36:57.069+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:37:07.092+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:37:07.093+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:37:17.113+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:37:17.114+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:37:27.111+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:37:27.112+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:37:37.132+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:37:37.134+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:37:47.151+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:37:47.152+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:37:57.147+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:37:57.148+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:38:07.164+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:38:07.165+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:38:17.174+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:38:17.175+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:38:27.170+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:38:27.171+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:38:37.191+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:38:37.193+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:38:47.211+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:38:47.212+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:38:57.214+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:38:57.215+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:39:07.232+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:39:07.233+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:39:17.246+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:39:17.247+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:39:27.246+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:39:27.247+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:39:37.263+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:39:37.264+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:39:47.274+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:39:47.275+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:39:57.274+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:39:57.275+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:40:07.295+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:40:07.296+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:40:17.317+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:40:17.318+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:40:27.316+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:40:27.317+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:40:37.341+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:40:37.342+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:40:47.362+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:40:47.363+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:40:57.368+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:40:57.370+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:41:07.391+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:41:07.392+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:41:17.406+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-09-10T09:41:17.407+0000] {filesystem.py:64} INFO - Poking for file /opt/***/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-10T09:41:18.840+0000] {local_task_job_runner.py:294} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2023-09-10T09:41:18.843+0000] {process_utils.py:131} INFO - Sending 15 to group 379. PIDs of all processes in the group: [379]
+[2023-09-10T09:41:18.843+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 379
+[2023-09-10T09:41:18.844+0000] {taskinstance.py:1632} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-09-10T09:41:18.870+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=379, status='terminated', exitcode=0, started='09:36:36') (379) terminated with exit code 0

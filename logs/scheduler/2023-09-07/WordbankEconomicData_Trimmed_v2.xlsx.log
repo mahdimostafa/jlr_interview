@@ -1,0 +1,10 @@
+[2023-09-07T17:22:35.492+0000] {processor.py:157} INFO - Started process (PID=63) to work on /opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-07T17:22:35.493+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx for tasks to queue
+[2023-09-07T17:22:35.496+0000] {logging_mixin.py:151} INFO - [2023-09-07T17:22:35.496+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-07T17:22:35.499+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-07T17:22:35.514+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx took 0.026 seconds
+[2023-09-07T17:23:05.789+0000] {processor.py:157} INFO - Started process (PID=94) to work on /opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-07T17:23:05.790+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx for tasks to queue
+[2023-09-07T17:23:05.793+0000] {logging_mixin.py:151} INFO - [2023-09-07T17:23:05.793+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-07T17:23:05.796+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx
+[2023-09-07T17:23:05.810+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx took 0.025 seconds

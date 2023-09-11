@@ -1,0 +1,24 @@
+[2023-09-10T11:32:23.806+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: file_sensor_dag.branch_task manual__2023-09-10T11:32:20.944927+00:00 [queued]>
+[2023-09-10T11:32:23.818+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: file_sensor_dag.branch_task manual__2023-09-10T11:32:20.944927+00:00 [queued]>
+[2023-09-10T11:32:23.822+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-09-10T11:32:23.839+0000] {taskinstance.py:1382} INFO - Executing <Task(BranchPythonOperator): branch_task> on 2023-09-10 11:32:20.944927+00:00
+[2023-09-10T11:32:23.844+0000] {standard_task_runner.py:57} INFO - Started process 790 to run task
+[2023-09-10T11:32:23.848+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'file_sensor_dag', 'branch_task', 'manual__2023-09-10T11:32:20.944927+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/new_file_sensor_dag.py', '--cfg-path', '/tmp/tmpbrpa7rb1']
+[2023-09-10T11:32:23.850+0000] {standard_task_runner.py:85} INFO - Job 49: Subtask branch_task
+[2023-09-10T11:32:23.894+0000] {task_command.py:415} INFO - Running <TaskInstance: file_sensor_dag.branch_task manual__2023-09-10T11:32:20.944927+00:00 [running]> on host 207c7509dcbb
+[2023-09-10T11:32:23.973+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='file_sensor_dag' AIRFLOW_CTX_TASK_ID='branch_task' AIRFLOW_CTX_EXECUTION_DATE='2023-09-10T11:32:20.944927+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-10T11:32:20.944927+00:00'
+[2023-09-10T11:32:23.975+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 226, in execute
+    branch = super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/new_file_sensor_dag.py", line 16, in decide_which_path
+    if os.path.exists(file_path):
+NameError: name 'os' is not defined
+[2023-09-10T11:32:23.984+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=file_sensor_dag, task_id=branch_task, execution_date=20230910T113220, start_date=20230910T113223, end_date=20230910T113223
+[2023-09-10T11:32:23.993+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 49 for task branch_task (name 'os' is not defined; 790)
+[2023-09-10T11:32:24.021+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-09-10T11:32:24.042+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check
