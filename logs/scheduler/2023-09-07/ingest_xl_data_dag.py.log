@@ -1,0 +1,34 @@
+[2023-09-07T17:22:35.307+0000] {processor.py:157} INFO - Started process (PID=40) to work on /opt/airflow/dags/ingest_xl_data_dag.py
+[2023-09-07T17:22:35.308+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_xl_data_dag.py for tasks to queue
+[2023-09-07T17:22:35.313+0000] {logging_mixin.py:151} INFO - [2023-09-07T17:22:35.313+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_xl_data_dag.py
+[2023-09-07T17:22:35.372+0000] {logging_mixin.py:151} INFO - [2023-09-07T17:22:35.370+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_xl_data_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_xl_data_dag.py", line 7, in <module>
+    from duckdb_handler import ingest_excel_to_duckdb
+  File "/opt/airflow/dags/duckdb_handler.py", line 91, in <module>
+    conn.execute(f"CREATE TABLE IF NOT EXISTS country_data({', '.join([f'{col} {col_type}' for col, col_type in COUNTRY_DATA_SCHEMA.items()])})")
+duckdb.ParserException: Parser Error: syntax error at or near "Or"
+LINE 1: ...BLE IF NOT EXISTS country_data(Country Or Region Name VARCHAR, Country Code VA...
+                                                  ^
+[2023-09-07T17:22:35.373+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_xl_data_dag.py
+[2023-09-07T17:22:35.397+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_xl_data_dag.py took 0.094 seconds
+[2023-09-07T17:23:05.626+0000] {processor.py:157} INFO - Started process (PID=71) to work on /opt/airflow/dags/ingest_xl_data_dag.py
+[2023-09-07T17:23:05.628+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_xl_data_dag.py for tasks to queue
+[2023-09-07T17:23:05.631+0000] {logging_mixin.py:151} INFO - [2023-09-07T17:23:05.631+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_xl_data_dag.py
+[2023-09-07T17:23:05.684+0000] {logging_mixin.py:151} INFO - [2023-09-07T17:23:05.681+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_xl_data_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_xl_data_dag.py", line 7, in <module>
+    from duckdb_handler import ingest_excel_to_duckdb
+  File "/opt/airflow/dags/duckdb_handler.py", line 90, in <module>
+    conn = duckdb.connect('my_database.duckdb')
+duckdb.IOException: IO Error: Could not set lock on file "/opt/airflow/my_database.duckdb": Resource temporarily unavailable
+[2023-09-07T17:23:05.685+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_xl_data_dag.py
+[2023-09-07T17:23:05.704+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_xl_data_dag.py took 0.082 seconds

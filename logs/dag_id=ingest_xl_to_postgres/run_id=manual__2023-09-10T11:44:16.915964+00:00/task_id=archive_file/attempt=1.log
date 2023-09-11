@@ -1,0 +1,35 @@
+[2023-09-10T11:44:20.224+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ingest_xl_to_postgres.archive_file manual__2023-09-10T11:44:16.915964+00:00 [queued]>
+[2023-09-10T11:44:20.233+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ingest_xl_to_postgres.archive_file manual__2023-09-10T11:44:16.915964+00:00 [queued]>
+[2023-09-10T11:44:20.234+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-09-10T11:44:20.245+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): archive_file> on 2023-09-10 11:44:16.915964+00:00
+[2023-09-10T11:44:20.250+0000] {standard_task_runner.py:57} INFO - Started process 996 to run task
+[2023-09-10T11:44:20.254+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ingest_xl_to_postgres', 'archive_file', 'manual__2023-09-10T11:44:16.915964+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/ingest_xl_data_dag.py', '--cfg-path', '/tmp/tmpsgcp2_1k']
+[2023-09-10T11:44:20.257+0000] {standard_task_runner.py:85} INFO - Job 59: Subtask archive_file
+[2023-09-10T11:44:20.303+0000] {task_command.py:415} INFO - Running <TaskInstance: ingest_xl_to_postgres.archive_file manual__2023-09-10T11:44:16.915964+00:00 [running]> on host 207c7509dcbb
+[2023-09-10T11:44:20.525+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='ingest_xl_to_postgres' AIRFLOW_CTX_TASK_ID='archive_file' AIRFLOW_CTX_EXECUTION_DATE='2023-09-10T11:44:16.915964+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-10T11:44:16.915964+00:00'
+[2023-09-10T11:44:20.533+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/shutil.py", line 791, in move
+    os.rename(src, real_dst)
+OSError: [Errno 18] Invalid cross-device link: '/opt/airflow/plugins/WordbankEconomicData_Trimmed_v2.xlsx' -> 'processed_files/WordbankEconomicData_Trimmed_v2.xlsx_ingested_20230910114420.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/ingest_xl_data_dag.py", line 10, in archive_file
+    shutil.move(file_path, new_file_path)
+  File "/usr/local/lib/python3.8/shutil.py", line 811, in move
+    copy_function(src, real_dst)
+  File "/usr/local/lib/python3.8/shutil.py", line 435, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/usr/local/lib/python3.8/shutil.py", line 264, in copyfile
+    with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/plugins/WordbankEconomicData_Trimmed_v2.xlsx'
+[2023-09-10T11:44:20.543+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=ingest_xl_to_postgres, task_id=archive_file, execution_date=20230910T114416, start_date=20230910T114420, end_date=20230910T114420
+[2023-09-10T11:44:20.554+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 59 for task archive_file ([Errno 2] No such file or directory: '/opt/airflow/plugins/WordbankEconomicData_Trimmed_v2.xlsx'; 996)
+[2023-09-10T11:44:20.587+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-09-10T11:44:20.605+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

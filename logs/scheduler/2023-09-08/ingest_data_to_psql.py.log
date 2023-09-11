@@ -1,0 +1,1210 @@
+[2023-09-08T16:01:36.497+0000] {processor.py:157} INFO - Started process (PID=39) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:01:36.499+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T16:01:36.503+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:01:36.502+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:01:36.965+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:01:36.962+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T16:01:36.966+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:01:36.983+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.491 seconds
+[2023-09-08T16:02:07.373+0000] {processor.py:157} INFO - Started process (PID=52) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:02:07.374+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T16:02:07.377+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:02:07.377+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:02:07.822+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:02:07.819+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T16:02:07.822+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:02:07.843+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.474 seconds
+[2023-09-08T16:02:38.104+0000] {processor.py:157} INFO - Started process (PID=65) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:02:38.105+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T16:02:38.108+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:02:38.107+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:02:38.540+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:02:38.538+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T16:02:38.541+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:02:38.556+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.455 seconds
+[2023-09-08T16:03:08.788+0000] {processor.py:157} INFO - Started process (PID=78) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:03:08.789+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T16:03:08.792+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:03:08.791+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:03:09.185+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:03:09.183+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T16:03:09.186+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:03:09.201+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.417 seconds
+[2023-09-08T16:03:39.462+0000] {processor.py:157} INFO - Started process (PID=91) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:03:39.463+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T16:03:39.466+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:03:39.466+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:03:39.879+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:03:39.877+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T16:03:39.880+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:03:39.897+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.439 seconds
+[2023-09-08T16:04:10.148+0000] {processor.py:157} INFO - Started process (PID=104) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:04:10.149+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T16:04:10.152+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:04:10.152+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:04:10.573+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:04:10.571+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T16:04:10.575+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:04:10.592+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.448 seconds
+[2023-09-08T16:04:40.854+0000] {processor.py:157} INFO - Started process (PID=117) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:04:40.855+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T16:04:40.858+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:04:40.858+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:04:41.313+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:04:41.311+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T16:04:41.314+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:04:41.331+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.481 seconds
+[2023-09-08T16:05:11.723+0000] {processor.py:157} INFO - Started process (PID=130) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:05:11.725+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T16:05:11.727+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:05:11.727+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:05:12.015+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:05:12.010+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T16:05:12.017+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:05:12.036+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.315 seconds
+[2023-09-08T16:05:42.298+0000] {processor.py:157} INFO - Started process (PID=144) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:05:42.300+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T16:05:42.304+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:05:42.304+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:05:42.641+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:05:42.638+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T16:05:42.642+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:05:42.661+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.369 seconds
+[2023-09-08T16:06:12.955+0000] {processor.py:157} INFO - Started process (PID=157) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:06:12.956+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T16:06:12.959+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:06:12.959+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:06:13.254+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:06:13.250+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T16:06:13.257+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:06:13.274+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.324 seconds
+[2023-09-08T16:06:30.475+0000] {processor.py:157} INFO - Started process (PID=169) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:06:30.477+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T16:06:30.481+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:06:30.480+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:06:30.812+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:06:30.809+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T16:06:30.813+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:06:30.831+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.361 seconds
+[2023-09-08T16:07:21.948+0000] {processor.py:157} INFO - Started process (PID=39) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:07:21.950+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T16:07:21.954+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:07:21.953+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:07:22.395+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:07:22.391+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T16:07:22.397+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:07:22.421+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.480 seconds
+[2023-09-08T16:07:52.757+0000] {processor.py:157} INFO - Started process (PID=52) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:07:52.758+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T16:07:52.761+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:07:52.760+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:07:53.220+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:07:53.217+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T16:07:53.220+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:07:53.236+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.483 seconds
+[2023-09-08T16:08:23.567+0000] {processor.py:157} INFO - Started process (PID=65) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:08:23.568+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T16:08:23.571+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:08:23.571+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:08:23.960+0000] {logging_mixin.py:151} INFO - [2023-09-08T16:08:23.957+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T16:08:23.961+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T16:08:23.977+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.413 seconds
+[2023-09-08T17:45:25.502+0000] {processor.py:157} INFO - Started process (PID=38) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:45:25.503+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:45:25.506+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:45:25.506+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:45:25.958+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:45:25.955+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T17:45:25.959+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:45:25.979+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.481 seconds
+[2023-09-08T17:45:56.314+0000] {processor.py:157} INFO - Started process (PID=51) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:45:56.315+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:45:56.318+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:45:56.318+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:45:56.717+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:45:56.714+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T17:45:56.719+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:45:56.733+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.423 seconds
+[2023-09-08T17:46:27.003+0000] {processor.py:157} INFO - Started process (PID=64) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:46:27.005+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:46:27.008+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:46:27.008+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:46:27.386+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:46:27.383+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T17:46:27.388+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:46:27.409+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.410 seconds
+[2023-09-08T17:46:57.748+0000] {processor.py:157} INFO - Started process (PID=77) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:46:57.750+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:46:57.753+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:46:57.753+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:46:58.214+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:46:58.212+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T17:46:58.216+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:46:58.235+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.492 seconds
+[2023-09-08T17:47:28.559+0000] {processor.py:157} INFO - Started process (PID=90) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:47:28.561+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:47:28.564+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:47:28.564+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:47:28.970+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:47:28.967+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T17:47:28.971+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:47:28.988+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.433 seconds
+[2023-09-08T17:47:59.286+0000] {processor.py:157} INFO - Started process (PID=103) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:47:59.287+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:47:59.291+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:47:59.290+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:47:59.675+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:47:59.672+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T17:47:59.678+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:47:59.698+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.417 seconds
+[2023-09-08T17:48:29.931+0000] {processor.py:157} INFO - Started process (PID=116) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:48:29.933+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:48:29.936+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:48:29.936+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:48:30.331+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:48:30.328+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T17:48:30.332+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:48:30.349+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.422 seconds
+[2023-09-08T17:49:00.678+0000] {processor.py:157} INFO - Started process (PID=129) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:49:00.681+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:49:00.689+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:49:00.688+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:49:01.123+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:49:01.121+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T17:49:01.124+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:49:01.141+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.469 seconds
+[2023-09-08T17:49:31.721+0000] {processor.py:157} INFO - Started process (PID=142) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:49:31.724+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:49:31.728+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:49:31.727+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:49:32.023+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:49:32.021+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T17:49:32.024+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:49:32.043+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.327 seconds
+[2023-09-08T17:50:02.388+0000] {processor.py:157} INFO - Started process (PID=155) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:50:02.390+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:50:02.394+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:50:02.393+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:50:02.693+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:50:02.690+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T17:50:02.695+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:50:02.715+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.333 seconds
+[2023-09-08T17:50:33.090+0000] {processor.py:157} INFO - Started process (PID=168) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:50:33.092+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:50:33.096+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:50:33.096+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:50:33.369+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:50:33.365+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T17:50:33.370+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:50:33.389+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.303 seconds
+[2023-09-08T17:51:03.677+0000] {processor.py:157} INFO - Started process (PID=181) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:51:03.679+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:51:03.682+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:51:03.682+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:51:03.971+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:51:03.968+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 47, in ingest_excel
+    with get_connection() as conn:
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 16, in get_connection
+    return psycopg2.connect(**DATABASE_CONFIG)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-09-08T17:51:03.972+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:51:03.992+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.320 seconds
+[2023-09-08T17:51:08.184+0000] {processor.py:157} INFO - Started process (PID=187) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:51:08.186+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:51:08.189+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:51:08.189+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:51:08.501+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:51:08.498+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 49, in ingest_excel
+    if file_already_ingested(file_path, conn):
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 20, in file_already_ingested
+    cursor.execute("SELECT * FROM ingested_files WHERE file_name = %s", (file_name,))
+psycopg2.errors.UndefinedTable: relation "ingested_files" does not exist
+LINE 1: SELECT * FROM ingested_files WHERE file_name = '/opt/airflow...
+                      ^
+[2023-09-08T17:51:08.502+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:51:08.519+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.340 seconds
+[2023-09-08T17:51:38.767+0000] {processor.py:157} INFO - Started process (PID=200) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:51:38.769+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:51:38.772+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:51:38.772+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:51:39.184+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:51:39.180+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/compat/_optional.py", line 142, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'openpyxl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 478, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1513, in __init__
+    self._reader = self._engines[engine](self._io, storage_options=storage_options)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 548, in __init__
+    import_optional_dependency("openpyxl")
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/compat/_optional.py", line 145, in import_optional_dependency
+    raise ImportError(msg)
+ImportError: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+[2023-09-08T17:51:39.188+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:51:39.221+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.459 seconds
+[2023-09-08T17:52:22.406+0000] {processor.py:157} INFO - Started process (PID=38) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:52:22.408+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:52:22.410+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:52:22.410+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:52:22.903+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:52:22.900+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/compat/_optional.py", line 142, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'openpyxl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 478, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1513, in __init__
+    self._reader = self._engines[engine](self._io, storage_options=storage_options)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 548, in __init__
+    import_optional_dependency("openpyxl")
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/compat/_optional.py", line 145, in import_optional_dependency
+    raise ImportError(msg)
+ImportError: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+[2023-09-08T17:52:22.905+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:52:22.929+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.527 seconds
+[2023-09-08T17:52:53.341+0000] {processor.py:157} INFO - Started process (PID=51) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:52:53.344+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:52:53.347+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:52:53.346+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:52:53.788+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:52:53.785+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/compat/_optional.py", line 142, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'openpyxl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 478, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1513, in __init__
+    self._reader = self._engines[engine](self._io, storage_options=storage_options)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 548, in __init__
+    import_optional_dependency("openpyxl")
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/compat/_optional.py", line 145, in import_optional_dependency
+    raise ImportError(msg)
+ImportError: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+[2023-09-08T17:52:53.789+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:52:53.806+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.469 seconds
+[2023-09-08T17:53:24.166+0000] {processor.py:157} INFO - Started process (PID=64) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:53:24.167+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:53:24.171+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:53:24.170+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:53:24.600+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:53:24.598+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/compat/_optional.py", line 142, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'openpyxl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 478, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1513, in __init__
+    self._reader = self._engines[engine](self._io, storage_options=storage_options)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 548, in __init__
+    import_optional_dependency("openpyxl")
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/compat/_optional.py", line 145, in import_optional_dependency
+    raise ImportError(msg)
+ImportError: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+[2023-09-08T17:53:24.601+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:53:24.618+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.457 seconds
+[2023-09-08T17:53:54.968+0000] {processor.py:157} INFO - Started process (PID=77) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:53:54.970+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:53:54.973+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:53:54.972+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:53:55.410+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:53:55.408+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/compat/_optional.py", line 142, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'openpyxl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 478, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1513, in __init__
+    self._reader = self._engines[engine](self._io, storage_options=storage_options)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 548, in __init__
+    import_optional_dependency("openpyxl")
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/compat/_optional.py", line 145, in import_optional_dependency
+    raise ImportError(msg)
+ImportError: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+[2023-09-08T17:53:55.411+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:53:55.428+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.464 seconds
+[2023-09-08T17:54:25.706+0000] {processor.py:157} INFO - Started process (PID=90) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:54:25.708+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:54:25.711+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:54:25.710+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:54:26.161+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:54:26.158+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/compat/_optional.py", line 142, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'openpyxl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 478, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1513, in __init__
+    self._reader = self._engines[engine](self._io, storage_options=storage_options)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 548, in __init__
+    import_optional_dependency("openpyxl")
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/compat/_optional.py", line 145, in import_optional_dependency
+    raise ImportError(msg)
+ImportError: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+[2023-09-08T17:54:26.163+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:54:26.181+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.479 seconds
+[2023-09-08T17:55:43.066+0000] {processor.py:157} INFO - Started process (PID=41) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:55:43.069+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:55:43.072+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:55:43.072+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:55:43.754+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:55:43.751+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 486, in read_excel
+    data = io.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1551, in parse
+    return self._reader.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 746, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 569, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 597, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'country_data' not found
+[2023-09-08T17:55:43.755+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:55:43.821+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.760 seconds
+[2023-09-08T17:56:14.209+0000] {processor.py:157} INFO - Started process (PID=54) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:56:14.212+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:56:14.216+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:56:14.216+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:56:14.901+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:56:14.896+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 486, in read_excel
+    data = io.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1551, in parse
+    return self._reader.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 746, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 569, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 597, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'country_data' not found
+[2023-09-08T17:56:14.902+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:56:14.918+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.715 seconds
+[2023-09-08T17:56:45.277+0000] {processor.py:157} INFO - Started process (PID=67) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:56:45.279+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:56:45.282+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:56:45.282+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:56:45.962+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:56:45.958+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 486, in read_excel
+    data = io.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1551, in parse
+    return self._reader.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 746, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 569, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 597, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'country_data' not found
+[2023-09-08T17:56:45.964+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:56:45.985+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.713 seconds
+[2023-09-08T17:57:16.377+0000] {processor.py:157} INFO - Started process (PID=80) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:57:16.379+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:57:16.382+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:57:16.382+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:57:16.997+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:57:16.993+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 486, in read_excel
+    data = io.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1551, in parse
+    return self._reader.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 746, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 569, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 597, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'country_data' not found
+[2023-09-08T17:57:16.998+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:57:17.018+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.646 seconds
+[2023-09-08T17:57:47.494+0000] {processor.py:157} INFO - Started process (PID=93) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:57:47.496+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:57:47.501+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:57:47.501+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:57:48.014+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:57:48.010+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 486, in read_excel
+    data = io.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1551, in parse
+    return self._reader.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 746, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 569, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 597, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'country_data' not found
+[2023-09-08T17:57:48.015+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:57:48.034+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.544 seconds
+[2023-09-08T17:58:18.347+0000] {processor.py:157} INFO - Started process (PID=113) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:58:18.351+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:58:18.354+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:58:18.354+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:58:18.884+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:58:18.881+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 486, in read_excel
+    data = io.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1551, in parse
+    return self._reader.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 746, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 569, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 597, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'country_data' not found
+[2023-09-08T17:58:18.885+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:58:18.906+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.565 seconds
+[2023-09-08T17:58:49.204+0000] {processor.py:157} INFO - Started process (PID=126) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:58:49.207+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:58:49.210+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:58:49.210+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:58:49.680+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:58:49.676+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 486, in read_excel
+    data = io.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1551, in parse
+    return self._reader.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 746, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 569, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 597, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'country_data' not found
+[2023-09-08T17:58:49.682+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:58:49.705+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.506 seconds
+[2023-09-08T17:59:20.073+0000] {processor.py:157} INFO - Started process (PID=139) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:59:20.075+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:59:20.078+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:59:20.078+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:59:20.525+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:59:20.519+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 486, in read_excel
+    data = io.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1551, in parse
+    return self._reader.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 746, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 569, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 597, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'country_data' not found
+[2023-09-08T17:59:20.527+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:59:20.547+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.479 seconds
+[2023-09-08T17:59:50.940+0000] {processor.py:157} INFO - Started process (PID=153) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:59:50.942+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T17:59:50.946+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:59:50.946+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:59:51.494+0000] {logging_mixin.py:151} INFO - [2023-09-08T17:59:51.490+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 486, in read_excel
+    data = io.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1551, in parse
+    return self._reader.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 746, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 569, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 597, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'country_data' not found
+[2023-09-08T17:59:51.495+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T17:59:51.523+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.589 seconds
+[2023-09-08T18:00:21.842+0000] {processor.py:157} INFO - Started process (PID=166) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T18:00:21.846+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T18:00:21.849+0000] {logging_mixin.py:151} INFO - [2023-09-08T18:00:21.849+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T18:00:22.349+0000] {logging_mixin.py:151} INFO - [2023-09-08T18:00:22.346+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 486, in read_excel
+    data = io.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1551, in parse
+    return self._reader.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 746, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 569, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 597, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'country_data' not found
+[2023-09-08T18:00:22.350+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T18:00:22.371+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.534 seconds
+[2023-09-08T18:00:52.936+0000] {processor.py:157} INFO - Started process (PID=179) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T18:00:52.938+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T18:00:52.941+0000] {logging_mixin.py:151} INFO - [2023-09-08T18:00:52.941+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T18:00:53.449+0000] {logging_mixin.py:151} INFO - [2023-09-08T18:00:53.445+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 486, in read_excel
+    data = io.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1551, in parse
+    return self._reader.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 746, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 569, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 597, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'country_data' not found
+[2023-09-08T18:00:53.450+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T18:00:53.472+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.541 seconds
+[2023-09-08T18:01:23.853+0000] {processor.py:157} INFO - Started process (PID=192) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T18:01:23.856+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T18:01:23.859+0000] {logging_mixin.py:151} INFO - [2023-09-08T18:01:23.858+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T18:01:24.356+0000] {logging_mixin.py:151} INFO - [2023-09-08T18:01:24.352+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 486, in read_excel
+    data = io.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1551, in parse
+    return self._reader.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 746, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 569, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 597, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'country_data' not found
+[2023-09-08T18:01:24.357+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T18:01:24.381+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.533 seconds
+[2023-09-08T18:01:54.748+0000] {processor.py:157} INFO - Started process (PID=205) to work on /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T18:01:54.750+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/ingest_data_to_psql.py for tasks to queue
+[2023-09-08T18:01:54.754+0000] {logging_mixin.py:151} INFO - [2023-09-08T18:01:54.754+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T18:01:55.223+0000] {logging_mixin.py:151} INFO - [2023-09-08T18:01:55.219+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/ingest_data_to_psql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 71, in <module>
+    ingest_excel('/opt/airflow/dags/WordbankEconomicData_Trimmed_v2.xlsx')
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 54, in ingest_excel
+    insert_data_from_excel(file_path, 'country_data', conn)
+  File "/opt/airflow/dags/ingest_data_to_psql.py", line 26, in insert_data_from_excel
+    data = pd.read_excel(file_path, sheet_name=table_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 486, in read_excel
+    data = io.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1551, in parse
+    return self._reader.parse(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 746, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_openpyxl.py", line 569, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 597, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'country_data' not found
+[2023-09-08T18:01:55.225+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_data_to_psql.py
+[2023-09-08T18:01:55.274+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_to_psql.py took 0.531 seconds
